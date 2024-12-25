@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Light gray background */
+}
+
+/* Main Container */
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card Container */
+.card {
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Ensure contents fit within the card */
+    width: 250px; /* Fixed card width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+/* Card Image Section */
+.card-img img {
+    display: block;
+    width: 100%; /* Full width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #e0e0e0; /* Separator line */
+}
+
+/* Card Body */
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Card Name */
+.card-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333333; /* Dark text */
+    margin-bottom: 10px;
+}
+
+/* Card Category and Price */
+.card-category, .card-price {
+    font-size: 0.9rem;
+    color: #666666; /* Subtle gray text */
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%; /* Full width for smaller screens */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
